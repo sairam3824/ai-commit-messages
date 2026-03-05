@@ -1,0 +1,41 @@
+# How to Run `ai-commit-messages` Locally
+
+Follow these steps to run the application from your terminal:
+
+## 1. Install Dependencies
+Open your terminal, ensure you are in the project folder `/Users/sairammaruri/Documents/New git projects/ai-commit-messages`, and install the required Node.js packages:
+```bash
+npm install
+```
+
+## 2. Make the command global (Recommended)
+By default, you would need to run `node bin/aicommit.js` every time. To just type `aicommit` anywhere on your computer, run:
+```bash
+npm link
+```
+*Note: Depending on your system policies, you may need to run `sudo npm link`.*
+
+## 3. Setup your Configuration
+The application needs an API key to communicate with an LLM (OpenAI, Claude, or Gemini). Run the config wizard to set it up:
+```bash
+aicommit config
+```
+
+## 4. Test it out!
+Go to any git repository where you have made code changes. 
+Stage the changes:
+```bash
+git add .
+```
+Then ask the AI to generate a commit message for you!
+```bash
+aicommit generate
+```
+
+*(You can also use the shorthand `aicommit g`!)*
+
+### Additional Flags
+You can run `aicommit g --help` to see additional options, such as:
+- `--type feat` to force a "feat: " commit.
+- `--emoji` to ask the AI to prepend a gitmoji to the commit message. 
+- `--dry-run` to output the options without offering to execute the final `git commit` command.
