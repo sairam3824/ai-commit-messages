@@ -1,0 +1,31 @@
+{
+  "name": "ai-commit-messages",
+  "version": "1.0.0",
+  "description": "Smart Git commit message generator using LLMs",
+  "main": "src/index.js",
+  "bin": {
+    "aicommit": "./bin/aicommit.js"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "git",
+    "commit",
+    "ai",
+    "llm",
+    "conventional-commits",
+    "cli"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "dotenv": "^16.6.1",
+    "inquirer": "^9.2.12",
+    "node-fetch": "^3.3.2",
+    "ora": "^7.0.1"
+  }
+}
