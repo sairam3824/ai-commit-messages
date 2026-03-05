@@ -183,6 +183,4 @@ Apache License 2.0 - see the [LICENSE](LICENSE) file for details
 
 Built with [Claude](https://claude.ai) - AI assistant by Anthropic
 
----
 
-Made with ❤️ by developers, for developers
