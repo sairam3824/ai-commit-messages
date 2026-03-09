@@ -1,7 +1,8 @@
-import { exec } from 'child_process';
+import { exec, execFile } from 'child_process';
 import { promisify } from 'util';
 
 const execAsync = promisify(exec);
+const execFileAsync = promisify(execFile);
 
 export async function getStagedDiff() {
   try {
@@ -14,7 +15,7 @@ export async function getStagedDiff() {
 
 export async function commitChanges(message) {
   try {
-    await execAsync(`git commit -m "${message.replace(/"/g, '\\"')}"`);
+    await execFileAsync('git', ['commit', '-m', message]);
   } catch (error) {
     throw new Error('Failed to commit changes');
   }

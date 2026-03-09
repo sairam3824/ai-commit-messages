@@ -6,7 +6,7 @@ Smart Git commit message generator powered by LLMs. Never write a bad commit mes
 
 [![Built with Claude](https://img.shields.io/badge/Built%20with-Claude-blueviolet)](https://claude.ai)
 [![npm version](https://img.shields.io/npm/v/ai-commit-messages.svg)](https://www.npmjs.com/package/ai-commit-messages)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## ✨ Features
 
@@ -177,7 +177,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📄 License
 
-Apache License 2.0 - see the [LICENSE](LICENSE) file for details
+MIT License - see the [LICENSE](LICENSE) file for details
 
 ## 🙏 Acknowledgments
 
